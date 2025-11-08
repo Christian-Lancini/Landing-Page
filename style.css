@@ -1,0 +1,130 @@
+/* Impara: Rimuovi i margini predefiniti del body per evitare barre di scorrimento indesiderate */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2C2E39;
+    color: white;
+    width: 100%; /* Correzzione: Usa 100% invece di 100vw per evitare margini negativi*/
+    position: sticky;
+    top: 0;
+    height: 100px;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    cursor: pointer; /*Bug corretto:  Solzuione per <a senza href> */ 
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    color: #1b1b20;
+    font-size: 40px;
+}
+
+h2{
+    color: #1b1b20;
+    margin-left: 40px;
+}
+
+p{
+    color: #191a1d;
+    margin-left: 40px;
+}
+
+li{
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+img {
+    transition: 0.5s;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: solid 1px #46474d;
+   border-radius: 16px;
+   margin-top: 100px;
+   width: 400px;
+}
+
+img:hover{
+    transition: 0.5s;
+    width: 450px;
+}
+
+
+
+nav {
+    background-color: #2C2E39;
+    width: 300px;
+    height: 100vh;
+    position: fixed; /* Mantiene la nav fissa in quella posizione */
+    left: 0;         /* Inizia da sinistra */
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: none; 
+    transition: left 0.5s ease;     /* Imapra: Aggiungi una transizione per un effetto di comparsa più fluido, se vuoi */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/*  Buono stile trovato !   */
+nav a:hover {
+    background-color: #46474d;
+    box-shadow: 0 0 4px #bbb;
+}
+
+footer{
+    color: white;
+    background-color: #2C2E39;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: #62636a;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#Info #Link{
+    padding: 10px;
+}
+
+#Info h3, #Info p, #Info a {
+    margin-left: 50px;
+}
+
+#Link h3, #Link p, #Link a{
+    margin-right: 50px;
+}
