@@ -1,4 +1,5 @@
 ***Pagina esempio di una Landing Page***
 
-Ho creato uan semplice Landing Page con HTML, CSS, e JS per la funzione showNav() per creare una sidebar.
+I created a simple Landing Page with HTML, CSS, and JS for the showNav() function to create a sidebar.
+
 
